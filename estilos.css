@@ -1,0 +1,248 @@
+* {
+    /* margim colada na web, distancia 0, fonte normal e tamanho das letras*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    text-decoration: none;
+    list-style: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+
+/* Fundo rosa claro*/
+
+.fundoRosa1 {
+    color: #fcfcfc;
+    /*cor das letras */
+    background: linear-gradient(rgba(255, 0, 0, 0.527) 10%, 30%, rgba(0, 0, 255, 0.664) 90%);
+    /*tonalidade */
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.galeria img {
+    padding: 5px;
+    /* distancia */
+    height: 250px;
+    /*largura*/
+    width: 100%;
+    box-shadow: rgb(0, 0, 0) 2px 2px 50px;
+    /* altura*/
+    /*
+        -webkit-filter:grayscale(10%);
+        filter:grayscale(40%);
+    */
+}
+
+
+/*
+Animação, filto que deixa a imagem com a cor original quando passa o mouse em cima dela
+.galeria img:hover{
+    -webkit-filter:grayscale(0%);
+    filter:grayscale(0);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+*/
+
+
+/* Imagens*/
+
+img {
+    width: 100%;
+    /*altura 100% */
+    /* largura */
+    height: 200px;
+    border: 0;
+    /* borda */
+}
+
+
+/* Logo 
+
+.logo {
+    height: 180px;
+     Altura 
+    width: 320px;
+     largura 
+    margin: 0 auto;
+    auto e central 
+    background-image: url(logoo-min.png);
+     caminho da imagem 
+    background-repeat: no-repeat;
+     Para não se repetir 
+}*/
+
+
+/* Botão Menu */
+
+.botaoMenu {
+    width: 46px;
+    height: 46px;
+    left: 10%;
+    /* icone para direita */
+    cursor: pointer;
+    /* ficar com a maozinha quando passar o mouse*/
+    background: #ff00bb9c url(menu.png) center center no-repeat;
+    border-radius: 50%;
+    /* deixando ele em formato de circulo */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+
+/* quando ao clicar no menu ele muda de cor */
+
+.botaoMenu.menuAtivo {
+    background-color: #b4048567;
+}
+
+
+/* quando passar o mouse em cima do icone ele muda de cor */
+
+.botaoMenu:hover {
+    background-color: #f5a9e177;
+}
+
+
+/* Fundo do menu Home e Redes sociais*/
+
+nav ul {
+    position: fixed;
+    /* deixando ele fixado */
+    left: -100%;
+    /* a esquerda quando clicar */
+    top: 0;
+    width: 75%;
+    height: 100%;
+    min-width: 200px;
+    /* tamanho minimo */
+    max-width: 320px;
+    /* tamanho maximo */
+    background: #df01d8ab;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    /* Tonalidade */
+    display: block;
+    padding: 10px;
+}
+
+
+/* ao passar o mouse em cima*/
+
+nav ul li a:hover {
+    background-color: #ffffffc5;
+    color: #975263;
+}
+
+
+/* menu galeria etc... e facebook etc...*/
+
+nav ul li ul {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    /* tamanho onde a cor vai ocupar */
+    background-color: #fe2ef7a1;
+    padding: 10px;
+}
+
+nav ul li ul li a {
+    text-align: left;
+    /*texto alinhado para esquerda */
+    border-bottom: 1px solid #F5A9D0;
+    /* */
+}
+
+
+/* quando passa o mouse em cima das opções de menu */
+
+nav ul li ul li a:hover {
+    color: #884757;
+    background-color: #ffffff9d;
+}
+
+::-webkit-input-placeholder {
+    color: #006600;
+    font-weight: bold;
+    /* tonalidade*/
+    font-size: 0.8em;
+    /* tamanho da letra*/
+    font-style: normal;
+    /* formato de texto*/
+}
+
+h1,
+p.titulo {
+    text-align: center;
+    /* texto centralizado */
+    font-size: 1.5em;
+    /* tamanho */
+    font-family: 'Anton', sans-serif;
+    /* fonte da letra */
+    letter-spacing: 5px;
+    /*distancia das letras */
+    text-transform: uppercase;
+    /* TEXTO MAIUSCULO */
+    padding: 20px;
+}
+
+.RosaPrimavera {
+    padding: 10px;
+    color: #ffffff;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.205), blue);
+    /*tonalidade */
+}
+
+.conteudoEscolas img {
+    /*padding: 3px; distancia */
+    height: 200px;
+    /*largura*/
+    width: 250px;
+    /* altura*/
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 10px 50px 50px #000;
+    margin: 0px 0px 10px;
+}
+
+footer p {
+    font-family: 'Cinzel', serif;
+    font-size: 0.9em;
+    /* tamanho */
+    color: #ffffff;
+    text-shadow: #000 1px 0px 2px;
+}
+
+.contato {
+    width: 60px;
+    height: 55px;
+}
+
+.localizacao {
+    background: linear-gradient(rgba(255, 0, 0, 0.527) 10%, 30%, rgba(0, 0, 255, 0.664) 90%);
+}
+
+.localizacao h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+iframe {
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+    border: 15px;
+}
