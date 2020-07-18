@@ -5,13 +5,7 @@
     font-family: 'Arial';
     text-decoration: none;
     list-style: none;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
 }
-
-
-/* Fundo rosa claro*/
 
 .fundoRosa1 {
     color: #fcfcfc;
@@ -22,12 +16,12 @@
     font-size: 1.7em;
 }
 
-.galeria img {
+.imggaleria {
     padding: 5px;
     /* distancia */
     height: 250px;
     /*largura*/
-    width: 100%;
+    width: 300px;
     box-shadow: rgb(0, 0, 0) 2px 2px 50px;
     /* altura*/
     /*
@@ -81,11 +75,11 @@ img {
 .botaoMenu {
     width: 46px;
     height: 46px;
-    left: 10%;
+    margin-left: 85vw;
     /* icone para direita */
     cursor: pointer;
     /* ficar com a maozinha quando passar o mouse*/
-    background: #ff00bb9c url(menu.png) center center no-repeat;
+    background: #f8a5e2fb url(menu.png) center center no-repeat;
     border-radius: 50%;
     /* deixando ele em formato de circulo */
     -moz-border-radius: 50%;
@@ -96,7 +90,7 @@ img {
 /* quando ao clicar no menu ele muda de cor */
 
 .botaoMenu.menuAtivo {
-    background-color: #b4048567;
+    background-color: #11040e67;
 }
 
 
@@ -195,7 +189,7 @@ p.titulo {
     /*distancia das letras */
     text-transform: uppercase;
     /* TEXTO MAIUSCULO */
-    padding: 20px;
+    text-shadow: 2px 2px 2px rgb(5, 0, 0);
 }
 
 .RosaPrimavera {
@@ -232,7 +226,9 @@ footer p {
 }
 
 .localizacao {
-    background: linear-gradient(rgba(255, 0, 0, 0.527) 10%, 30%, rgba(0, 0, 255, 0.664) 90%);
+    position: relative;
+    top: 0px;
+    background: linear-gradient(rgba(255, 0, 0, 0.041) 10%, 30%, rgba(0, 0, 255, 0.664) 90%);
 }
 
 .localizacao h2 {
@@ -241,8 +237,23 @@ footer p {
 }
 
 iframe {
-    width: 300px;
+    width: 50vw;
     height: 400px;
     padding: 15px;
     border: 15px;
+}
+
+.autor {
+    text-align: center;
+}
+
+a {
+    color: rgba(65, 65, 66, 0.767);
+    text-shadow: none;
+    font-weight: 600;
+}
+
+.gitHub {
+    position: relative;
+    float: right;
 }
