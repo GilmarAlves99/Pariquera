@@ -75,12 +75,13 @@ img {
 .botaoMenu {
     width: 46px;
     height: 46px;
-    margin-left: 85vw;
+    margin-left: 82vw;
     /* icone para direita */
     cursor: pointer;
     /* ficar com a maozinha quando passar o mouse*/
-    background: #f8a5e2fb url(menu.png) center center no-repeat;
+    background: #f5f4f4 url(menu.png) center center no-repeat;
     border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(228, 16, 16, 0.664);
     /* deixando ele em formato de circulo */
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -90,14 +91,14 @@ img {
 /* quando ao clicar no menu ele muda de cor */
 
 .botaoMenu.menuAtivo {
-    background-color: #11040e67;
+    background-color: #fd3e044b;
 }
 
 
 /* quando passar o mouse em cima do icone ele muda de cor */
 
 .botaoMenu:hover {
-    background-color: #f5a9e177;
+    background-color: #f383d57e;
 }
 
 
@@ -108,14 +109,14 @@ nav ul {
     /* deixando ele fixado */
     left: -100%;
     /* a esquerda quando clicar */
-    top: 0;
+    top: 0px;
     width: 75%;
     height: 100%;
     min-width: 200px;
     /* tamanho minimo */
     max-width: 320px;
     /* tamanho maximo */
-    background: #df01d8ab;
+    background: linear-gradient(to left, rgb(238, 107, 135) 10%, rgb(212, 0, 255) 55%, rgb(255, 0, 242) 80%);
     overflow: hidden;
     overflow-y: auto;
     z-index: 1;
@@ -129,15 +130,15 @@ nav ul li a {
     color: #FFFFFF;
     /* Tonalidade */
     display: block;
-    padding: 10px;
+    padding: 12px;
 }
 
 
 /* ao passar o mouse em cima*/
 
 nav ul li a:hover {
-    background-color: #ffffffc5;
-    color: #975263;
+    background-color: #ffffff3d;
+    color: #ffffff;
 }
 
 
@@ -148,7 +149,6 @@ nav ul li ul {
     margin: 0 auto;
     width: 100%;
     /* tamanho onde a cor vai ocupar */
-    background-color: #fe2ef7a1;
     padding: 10px;
 }
 
@@ -163,8 +163,8 @@ nav ul li ul li a {
 /* quando passa o mouse em cima das opções de menu */
 
 nav ul li ul li a:hover {
-    color: #884757;
-    background-color: #ffffff9d;
+    color: #ffffff;
+    background-color: #ffffff73;
 }
 
 ::-webkit-input-placeholder {
@@ -234,6 +234,12 @@ footer p {
 .localizacao h2 {
     font-size: 2em;
     text-align: center;
+}
+
+.localizacao p {
+    font-size: 0.9em;
+    text-align: center;
+    margin-left: 0%;
 }
 
 iframe {
