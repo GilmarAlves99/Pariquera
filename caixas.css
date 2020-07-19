@@ -147,10 +147,14 @@
             }
             
             @media screen and (max-width:480px) {
-                p.visite {
+                p.visite,
+                .localizacao p {
                     font-size: 20px;
                 }
                 .autor {
                     float: left;
+                }
+                div.botaoMenu {
+                    margin-left: 70vw;
                 }
             }
